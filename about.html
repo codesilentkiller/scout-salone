@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About – Scout Salone Football Agency</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        .about-hero {
+            padding: 120px 30px;
+            text-align: center;
+            background: linear-gradient(to bottom,
+                    rgba(255, 0, 0, 0.2),
+                    rgba(255, 0, 0, 0.05),
+                    #0a0a0a);
+        }
+
+        .about-hero h1 {
+            font-size: 60px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            color: #ff2d2d;
+            text-transform: uppercase;
+        }
+
+        .about-hero p {
+            max-width: 700px;
+            margin: auto;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #cccccc;
+        }
+
+        .about-wrapper {
+            max-width: 1300px;
+            margin: auto;
+            padding: 60px 30px;
+        }
+
+        /* GRID SECTIONS */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 50px;
+            margin-top: 60px;
+            align-items: center;
+        }
+
+        .grid-2 img {
+            width: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 40px rgba(255, 0, 0, 0.3);
+        }
+
+        .grid-2 div h2 {
+            font-size: 40px;
+            color: #ff2d2d;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .grid-2 div p {
+            font-size: 18px;
+            color: #cccccc;
+        }
+
+        /* VALUES SECTION */
+        .values {
+            margin-top: 80px;
+        }
+
+        .values h2 {
+            font-size: 38px;
+            color: #ff2d2d;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+
+        .value-box {
+            background: rgba(255, 255, 255, 0.04);
+            padding: 30px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            transition: transform .3s;
+        }
+
+        .value-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .value-box h3 {
+            color: #ffffff;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .value-box p {
+            color: #cccccc;
+            font-size: 16px;
+        }
+
+        /* CTA Strip */
+        .cta-strip {
+            margin-top: 90px;
+            background: linear-gradient(90deg, #ff0000, #b30000);
+            padding: 50px 20px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .cta-strip h2 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .cta-strip p {
+            font-size: 18px;
+            opacity: .9;
+        }
+
+        @media (max-width: 900px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-hero h1 {
+                font-size: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"
+            style="position:absolute; left:40px; color:white; font-size:22px; font-weight:700; letter-spacing:1px;">
+            Scout Salone</div>
+        <a href="home.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="players.html">Players</a>
+        <a href="matches.html">Matches</a>
+        <a href="contactUs.html">Contact Us</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="about-hero">
+        <h1>Who We Are</h1>
+        <p>Driven by ambition. Built on discipline. Dedicated to developing elite football talent and empowering the next generation of global stars.</p>
+    </section>
+
+    <div class="about-wrapper">
+
+        <!-- SECTION 1 -->
+        <div class="grid-2">
+            <div>
+                <h2>Our Identity</h2>
+                <p>Scout Salone Football Agency stands as one of Africa’s fastest-growing sports management brands. We operate with a clear focus: discovering talented athletes, shaping them into world-class professionals, and connecting them with opportunities that elevate their careers globally.</p>
+            </div>
+            <img src="https://images.pexels.com/photos/114296/pexels-photo-114296.jpeg" alt="">
+        </div>
+
+        <!-- SECTION 2 -->
+        <div class="grid-2">
+            <img src="https://images.pexels.com/photos/399187/pexels-photo-399187.jpeg" alt="">
+            <div>
+                <h2>Our Mission</h2>
+                <p>To create a foundation where young footballers can thrive mentally, physically and professionally. Through structured development programs, international exposure, and personalized career planning, we help athletes unlock their full potential.</p>
+            </div>
+        </div>
+
+        <!-- SECTION 3 -->
+        <div class="grid-2">
+            <div>
+                <h2>Our Vision</h2>
+                <p>To become a global powerhouse in football talent development, redefining the standards of training, scouting, and representation. Scout Salone aims to build a legacy of excellence—one player at a time.</p>
+            </div>
+            <img src="https://images.pexels.com/photos/114312/pexels-photo-114312.jpeg" alt="">
+        </div>
+
+        <!-- VALUES -->
+        <section class="values">
+            <h2>Core Values</h2>
+
+            <div class="values-grid">
+
+                <div class="value-box">
+                    <h3><i class="fas fa-bolt"></i> Excellence</h3>
+                    <p>We are committed to delivering world-class training, representation, and guidance.</p>
+                </div>
+
+                <div class="value-box">
+                    <h3><i class="fas fa-users"></i> Teamwork</h3>
+                    <p>A united team of coaches, scouts, mentors, and professionals working toward one goal.</p>
+                </div>
+
+                <div class="value-box">
+                    <h3><i class="fas fa-fire"></i> Passion</h3>
+                    <p>Football isn't just a sport—it's our lifestyle, culture, and identity.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <div class="cta-strip">
+            <h2>Shaping Tomorrow’s Football Stars</h2>
+            <p>Join the movement. Become part of Scout Salone.</p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p class="fText">2025 Scout Salone Football Agency © All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

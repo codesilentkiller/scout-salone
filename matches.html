@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixtures - Scout Salone Football Agency</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #000000, #111111);
+            color: #e0e0e0;
+        }
+
+        /* SECTION */
+        .fixtures-section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .fixtures-section h2 {
+            color: #ff1a1a;
+            text-align: center;
+            font-size: 42px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 60px;
+        }
+
+        /* COMPETITION CARD */
+        .competition {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(14px) saturate(200%);
+            border-radius: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            padding: 35px;
+            margin-bottom: 45px;
+            box-shadow: 0 10px 35px rgba(255, 0, 0, 0.15);
+            transition: 0.35s;
+        }
+
+        .competition:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 45px rgba(255, 0, 0, 0.25);
+        }
+
+        .competition h3 {
+            color: #ff1a1a;
+            margin-bottom: 25px;
+            font-size: 28px;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-transform: uppercase;
+        }
+
+        /* TABLE */
+        .fixtures-table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+        }
+
+        .fixtures-table th {
+            font-size: 16px;
+            padding: 14px;
+            color: #ff4d4d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .fixtures-table td {
+            padding: 18px 14px;
+            font-size: 17px;
+            color: #dcdcdc;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: 0.25s;
+        }
+
+        /* MATCH ROW HOVER */
+        .fixtures-table tr:hover td {
+            background: rgba(255, 0, 0, 0.08);
+            color: #ffffff;
+        }
+
+        /* TEAM NAME */
+        .team-name {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+
+        .team-name i {
+            color: #ff1a1a;
+            font-size: 18px;
+        }
+
+        /* MOBILE */
+        @media(max-width: 768px) {
+
+            .fixtures-section h2 {
+                font-size: 34px;
+            }
+
+            .fixtures-table th,
+            .fixtures-table td {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .competition h3 {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo"
+            style="position:absolute; left:40px; color:white; font-size:22px; font-weight:700; letter-spacing:1px;">
+            Scout Salone</div>
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="players.html">Players</a>
+        <a href="matches.html">Matches</a>
+        <a href="contactUs.html">Contact Us</a>
+    </nav>
+
+    <section class="fixtures-section">
+        <h2>Upcoming Fixtures</h2>
+
+        <div class="competition">
+            <h3><i class="fas fa-trophy"></i> Premier League</h3>
+            <table class="fixtures-table">
+                <tr>
+                    <th>Match</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td class="team-name"><i class="fas fa-futbol"></i> Team A vs Team B</td>
+                    <td>20 Nov 2025</td>
+                    <td>16:00</td>
+                </tr>
+                <tr>
+                    <td class="team-name"><i class="fas fa-futbol"></i> Team C vs Team D</td>
+                    <td>21 Nov 2025</td>
+                    <td>18:00</td>
+                </tr>
+                <tr>
+                    <td class="team-name"><i class="fas fa-futbol"></i> Team E vs Team F</td>
+                    <td>22 Nov 2025</td>
+                    <td>14:00</td>
+                </tr>
+                <tr>
+                    <td class="team-name"><i class="fas fa-futbol"></i> Team G vs Team H</td>
+                    <td>23 Nov 2025</td>
+                    <td>17:00</td>
+                </tr>
+                <tr>
+                    <td class="team-name"><i class="fas fa-futbol"></i> Team I vs Team J</td>
+                    <td>24 Nov 2025</td>
+                    <td>19:00</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="competition">
+            <h3><i class="fas fa-trophy"></i> Champions Cup</h3>
+            <table class="fixtures-table">
+                <tr>
+                    <th>Match</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td class="team-name"><i class="fas fa-futbol"></i> Team K vs Team L</td>
+                    <td>25 Nov 2025</td>
+                    <td>16:00</td>
+                </tr>
+                <tr>
+                    <td class="team-name"><i class="fas fa-futbol"></i> Team M vs Team N</td>
+                    <td>26 Nov 2025</td>
+                    <td>18:00</td>
+                </tr>
+                <tr>
+                    <td class="team-name"><i class="fas fa-futbol"></i> Team O vs Team P</td>
+                    <td>27 Nov 2025</td>
+                    <td>14:00</td>
+                </tr>
+                <tr>
+                    <td class="team-name"><i class="fas fa-futbol"></i> Team Q vs Team R</td>
+                    <td>28 Nov 2025</td>
+                    <td>17:00</td>
+                </tr>
+                <tr>
+                    <td class="team-name"><i class="fas fa-futbol"></i> Team S vs Team T</td>
+                    <td>29 Nov 2025</td>
+                    <td>19:00</td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <p class="fText">2025 Scout Salone Football Agency © All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
